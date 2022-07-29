@@ -1,0 +1,3 @@
+Type | Time | Day | Location
+---|---|---|---
+Lab | 12:45 - 2:45 | Th | KTH ????
