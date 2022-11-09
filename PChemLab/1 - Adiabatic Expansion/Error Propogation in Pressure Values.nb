@@ -1,0 +1,32 @@
+Notebook[{Cell[
+BoxData[{RowBox[{RowBox[{"atm"," ","=","  ","14.749"}],";"}],"\n",RowBox[
+{RowBox[{"(*",RowBox[{"trials"," ",RowBox[{"{",RowBox[{RowBox[{"N2"," ","1"}],","," ",RowBox[
+{"N2"," ","2"}],","," ",RowBox[{"Ar"," ","1"}],","," ",RowBox[{"Ar"," ","2"}]}],"}"}]}],"*)"}],"\n",RowBox[
+{"(*",RowBox[{"For"," ","each"," ",RowBox[{"trial",":"," ",RowBox[{"{",RowBox[{"P1gauge",",","P2",","," ","P3gauge"}],"}"}]}]}],"*)"}],"\n",RowBox[
+{RowBox[{"data","=",RowBox[{"{",RowBox[{RowBox[{"{",RowBox[{"1.66",",","atm",",","0.45"}],"}"}],",",RowBox[
+{"{",RowBox[{"1.64",",","atm",",","0.43"}],"}"}],",",RowBox[{"{",RowBox[{"1.63",",","atm",",","0.41"}],"}"}],",",RowBox[
+{"{",RowBox[{"1.71",",","atm",",","0.58"}],"}"}]}],"}"}]}],";"}]}]}],"Input",ExpressionUUID -> "9a795f97-4c41-4f46-ac61-abfa22942ca1"],Cell[
+CellGroupData[
+{Cell[
+BoxData[{RowBox[{RowBox[{"(*",RowBox[{"For"," ","P1"}],"*)"}],"\n",RowBox[
+{"Map","[",RowBox[{RowBox[{RowBox[{"PlusMinus","[",RowBox[{RowBox[{RowBox[{"#1","[",RowBox[
+{"[","1","]"}],"]"}],"+","atm"}],",",RowBox[{"Sqrt","[",RowBox[{RowBox[{RowBox[{"(",RowBox[
+{"0.01","/",RowBox[{"#1","[",RowBox[{"[","1","]"}],"]"}]}],")"}],"^","2"}],"+",RowBox[
+{RowBox[{"(",RowBox[{"0.005","/","atm"}],")"}],"^","2"}]}],"]"}]}],"]"}],"&"}],",","data"}],"]"}]}],"\n",RowBox[
+{RowBox[{"(*","P3","*)"}],"\n",RowBox[{"Map","[",RowBox[{RowBox[{RowBox[{"PlusMinus","[",RowBox[
+{RowBox[{RowBox[{"#1","[",RowBox[{"[","3","]"}],"]"}],"+","atm"}],",",RowBox[{"Sqrt","[",RowBox[
+{RowBox[{RowBox[{"(",RowBox[{"0.01","/",RowBox[{"#1","[",RowBox[{"[","3","]"}],"]"}]}],")"}],"^","2"}],"+",RowBox[
+{RowBox[{"(",RowBox[{"0.005","/","atm"}],")"}],"^","2"}]}],"]"}]}],"]"}],"&"}],",","data"}],"]"}]}]}],
+"Input",CellLabel -> "In[62]:= ",ExpressionUUID -> "97793dcb-550d-43cc-9742-182a06a5cce9"],Cell[
+BoxData[
+RowBox[{"{",RowBox[{RowBox[{"16.409`","\[PlusMinus]","0.0060336276280194044`"}],",",RowBox[
+{"16.389`","\[PlusMinus]","0.006106977561983984`"}],",",RowBox[{"16.379`","\[PlusMinus]","0.00614432858104689`"}],",",RowBox[
+{"16.459`","\[PlusMinus]","0.005857771070313263`"}]}],"}"}],StandardForm],"Output",
+CellLabel -> "Out[62]= ",ExpressionUUID -> "7a47cbeb-6ce4-404d-b4ec-fb6fe7f380b1"],Cell[
+BoxData[
+RowBox[{"{",RowBox[{RowBox[{"15.199`","\[PlusMinus]","0.022224807886349073`"}],",",RowBox[
+{"15.179`","\[PlusMinus]","0.023258284711701365`"}],",",RowBox[{"15.159`","\[PlusMinus]","0.02439259975303495`"}],",",RowBox[
+{"15.329`","\[PlusMinus]","0.01724471181593023`"}]}],"}"}],StandardForm],"Output",
+CellLabel -> "Out[63]= ",ExpressionUUID -> "89ec504f-95ec-4c1f-abbd-fd581d9f77ec"]},
+Open],ExpressionUUID -> "2577253d-87a3-4907-a3f7-9c4e944cb893"]},StyleDefinitions -> "Default.nb",
+FrontEndVersion -> "13.1 for Wolfram Cloud 1.63.0.1 (July 14, 2022)",Magnification -> 1.25`]
