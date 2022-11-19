@@ -11,4 +11,4 @@ Each folder is a class, each readme may contain important information such as me
 
 ## Classes
 
-The classes taken include
+The classes taken include Physics 2 + Lab, Physical Chemistry + Lab and Undergraduate Chemistry Seminar.
